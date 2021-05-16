@@ -1,0 +1,104 @@
+ body{
+    /*removes white spaces from body*/
+    margin: 0;
+  
+    /* I took this color from Twitter via the Inspector */
+    color: rgb(29, 161, 242);
+  }
+  
+  h1{
+    font-size: 6vh;
+    text-align: center;
+  }
+  
+  body, textarea{
+    /*this is not the Twitter font, but I find it very similar. Plus it's free. You just need to add the link to the Google Font Api, I inserted it directly into the pen*/
+    font-family: 'Noto Sans', sans-serif;
+    
+    font-weight: 600;
+    font-size: 2.5vh;
+  }
+  
+  
+  #tweet{
+    /*place the child elements in a columns, add a padding and set a border radius*/
+  
+    padding: 5vw;
+    display: flex;
+    flex-direction: column;
+    
+    border-radius: 2vw;
+    background-color: white;
+    border: 0.5px solid darkgray;
+      
+  }
+  
+  textarea{
+    padding: 2vw;
+    margin: 2vw -2vw;
+    min-height: 15vh;
+    color: #293241;
+    width: 100%;
+    border-color: rgb(29, 161, 242);
+    border-radius: 2vw;
+    
+    /*the part below removes the three lines at the bottom right of the textarea*/
+    resize: none;
+    
+  /*the part below removes the blue border that appears everytime you focus in the textarea*/
+    outline: none;
+  }
+  
+  textarea::placeholder{
+    color: darkgray;
+    opacity: 0.7;
+  }
+  
+  p{
+    margin: 0 1vw 0 0;
+  }
+  
+  #counter{
+    /*place the items in row and align them vertically*/
+    
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  circle{
+    fill: none;
+    stroke-width: 3;
+  }
+  
+  #gray{
+    stroke: lightgray;
+  }
+  
+  svg{
+    width: 10vmin;
+    height: 10vmin;
+  }
+  
+  /*settings for mobile*/
+  
+  @media only screen and (max-width: 500px) {
+    
+    #counter{
+      justify-content: center;
+    }
+    
+    #tweet{
+      align-items: center;
+    }
+    
+    textarea{
+      width: 80vw;
+      height: 40vh;
+    }
+    
+    h1{
+      font-size: 5vh;
+    }
+  }
+  

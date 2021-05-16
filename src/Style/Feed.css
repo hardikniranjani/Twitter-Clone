@@ -1,0 +1,100 @@
+.feed{
+    flex: 0.5 ;
+    /* position: relative; */
+    width: 100%;
+    border-right: 1px solid var(--twitter-background);
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+  
+
+.tweet_border{
+    border:8px solid var(--twitter-background);
+}
+
+
+.feed_header{
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top:0;
+    background-color: white;
+    z-index: 100;
+    border: 1px solid var(--twitter-background);
+    padding: 13px 20px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 1px 2px 9px #888888;
+}
+.menuicon { 
+   display:none;
+}
+.feed::-webkit-scrollbar{
+    display: none;
+}
+
+@media(max-width: 768px){
+    .feed{
+        border-left: 1px solid var(--twitter-background);
+        width: 100vw;
+        flex: 1;
+        position: absolute;
+        padding-right: 20px;
+    }
+
+    .tweet_massage{
+        width: 100%;
+    }
+    .menuicon { 
+        display: flex;
+        margin-right: 30px;
+        
+    }
+    .menui > .MuiSvgIcon-root{
+       padding-right: 0px;
+    }
+    .feed_header{
+        position:fixed;
+        top: 0px;
+        width: 100%;
+        padding-right: 0px;
+        background-color: white;
+        z-index: 100;
+        border: 1px solid var(--twitter-background);
+        /* padding: 13px 100px; */
+        margin-left:0px;
+        /* margin-left: auto;
+        margin-right: auto; */
+        box-shadow: 1px 2px 9px #888888;
+    }
+
+    .feed_header > h3 {
+        margin-left:0px;
+        padding-right: 30px;
+    }
+
+    .feed__footer_space{
+        padding:30px;
+    }
+    .feed__footer{
+        position:fixed;
+        bottom: 0px;
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        padding-right: 0px;
+        background-color: rgba(255, 255, 255, 1);
+        z-index: 100;
+        border: 1px solid var(--twitter-background);
+        /* padding: 13px 100px; */
+        margin-left:0px;
+        /* margin-left: auto;
+        margin-right: auto; */
+        box-shadow: 1px 2px 9px #888888;
+    }
+}

@@ -1,0 +1,41 @@
+
+  
+.HomePage{
+    display: flex;
+    position: static;
+    height: 100vh;
+    justify-self: start;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    /* padding: 0 10px; */
+    
+
+  }
+
+
+
+  @media(max-width: 768px){
+    .HomePage{
+      display: flex;
+    }
+   .sidebar{
+     
+
+      /* margin-left: auto;
+      margin-right: auto;  */
+     display: none;
+   }
+
+  .widgets{
+    display: none;
+  }
+ .feed{
+   position: absolute;
+    
+   width:100%;
+   padding-right:0px ;
+   padding-left: 0px;
+   /* right: 1px; */
+ }
+}

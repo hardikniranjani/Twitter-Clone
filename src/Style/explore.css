@@ -1,0 +1,23 @@
+.explore{
+    display: flex;
+    height: 100vh;
+    
+    width: 100%;
+    /* max-width: 200px; */
+    margin-left: auto;
+    margin-right: auto;
+    /* padding: 0 10px; */
+}
+
+@media(max-width: 768px){
+    .explore{
+        display: flex;
+        position: inherit;
+        height: 100vh;
+        width: 100vw;
+        margin-left: auto;
+        margin-right: auto;
+        /* padding: 0 10px; */
+    }
+
+}

@@ -1,0 +1,32 @@
+.authantication{
+    display:flex;
+    position: absolute;
+    text-align: center;
+    background-color:#fafafa;
+    width:100vw;
+    height: 100vh;
+
+}
+
+.authantication_page_image{
+    display: flex;
+    position: relative;
+    height: 490px;
+    margin-left: 80px;
+    margin-top:70px;
+    box-shadow: 1px 10px 20px rgb(145, 145, 145);
+}
+
+.authantication_div{
+    position: absolute;
+    display: flex;
+    flex-direction:column;
+    background-color: white;
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: 1px 3px 8px lightgrey;
+    padding: 20px;
+    border:1px solid #fffffff5;
+    margin-left:840px;
+    margin-top:80px;
+}

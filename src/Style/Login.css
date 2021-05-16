@@ -1,0 +1,111 @@
+.login_page{
+    display:flex;
+    position: absolute;
+    text-align: center;
+    background-color:#fafafa;
+    width:100vw;
+    height: 100vh;
+
+}
+
+.login_page_image{
+    display: flex;
+    position: relative;
+    height: 490px;
+    margin-left: 80px;
+    margin-top:70px;
+    box-shadow: 1px 10px 20px rgb(145, 145, 145);
+    border-radius:20px;
+}
+.login_page_image_size{
+    border-radius:20px;
+   
+}
+
+.login_page_div{
+    position: absolute;
+    display: flex;
+    flex-direction:column;
+    background-color: white;
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: 1px 3px 8px lightgrey;
+    padding: 20px;
+    border:1px solid #fffffff5;
+    margin-left:840px;
+    margin-top:80px;
+}
+
+.login_error{
+    font-size: 12px;
+    color:rgba(206, 39, 39, 0.801);
+    word-break: break-all;
+    line-height: 1rem;
+}
+
+.login_form_1{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.login_email{
+    background-color: #fafafa;
+    padding: 10px;
+    margin-bottom: 5px;
+    border:1px solid lightgrey;
+    outline: none;
+}
+.login_password{
+    background-color: #fafafa;
+    padding: 10px;
+    margin-bottom: 5px;
+    border:1px solid lightgrey;
+    outline: none;
+}
+.login_button{
+    background-color: rgb(43, 185, 233);
+    padding: 5px;
+    margin-bottom: 5px;
+    border:none;
+    color:white;
+    cursor: pointer;
+    outline: none;
+    /* opacity: 0.5;    */
+}
+
+.login_form_footer_link{
+    text-decoration: none;
+    margin: 0;
+    color:rgb(43, 185, 233);
+}
+.login_form_footer_link:hover{
+    transition: .5s;
+    color: steelblue;
+    
+}
+
+@media(max-width:768px){
+    .login_page_image{
+       width: 300px;
+        margin-left:70px;
+        top:-50px;
+        height: 200px;
+        box-shadow: -2px 8px  10px rgb(145, 145, 145);
+    }
+
+    .login_page_div{
+        position: absolute;
+        display: flex;
+        flex-direction:column;
+        background-color: white;
+        box-sizing: border-box;
+        border-radius: 5px;
+        box-shadow: 1px 3px 8px lightgrey;
+        padding: 20px;
+        border:1px solid #fffffff5;
+        margin-left:90px;
+        margin-right:auto;
+        margin-top:230px;
+    }
+}

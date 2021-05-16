@@ -1,0 +1,264 @@
+.profile{
+    display: flex;
+    /* position: relative; */
+    width: 100%;
+    height: 100%;
+    border-right: 1px solid var(--twitter-background);
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+.profile_sidebar{
+    /* display: flex; */
+    position: fixed;
+    padding-left:250px;
+}
+.profile_header{
+    display: flex;
+    margin-left:438px;
+    position: relative;
+    flex:0.7;
+    flex-direction: column;
+    height: 100vh;
+    width: 550px;
+    border-right: 1px solid lightgray;
+    border-left: 1px solid lightgray;
+}
+
+.profile_header_title{
+    position: fixed;
+    display: flex;
+    top: 0;
+    background-color: white;
+    padding-bottom: 13px;
+    z-index: 100;
+    width: 638px;
+    border-bottom: 1px solid lightgray;
+    box-shadow: 1px 1px 2px lightgray;
+}
+.profile_header_title > h3 {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.profile_bg{
+    display: flex;
+    height: 200px;
+    width: 638px;
+    margin-top: 40px;
+    border-bottom: 1px solid lightgray;
+
+}
+.profile_pic{
+    position: absolute;
+    display: flex;
+    margin-top: 200px;
+    margin-left:20px;
+    border-radius: 50%;
+    overflow: hidden;
+    border:3px solid rgb(255, 255, 255);
+    height: 130px;
+    width: 130px;
+    z-index: 10;
+    padding-left: 0px;
+    box-shadow: white;
+}
+
+.profile_header > button {
+    display: flex;
+    width: 80px;
+    margin-left: 550px;
+    background-color: white;
+    border-radius: 30px;
+    font-weight: bold;
+    border:1px solid var(--twitter-color);
+    color: var(--twitter-color);
+    margin-top: 15px;
+}
+.profile_header > button:hover{
+    background-color:#E8F5FE;
+}
+
+.profile_header_text{
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+.profile_header_text > p {
+    margin-top: 0px;
+    font-size: 14px;
+    color: rgb(155, 153, 153);
+}
+
+.profile_header_info {
+    padding: 20px;
+    padding-bottom: 160px;
+    border-bottom: 1px solid lightgray;
+}
+
+.profile_post{
+    display: flex;
+    flex-direction: column;
+    flex: 0.5;
+    width:638px;
+}
+
+@media(max-width: 768px){
+    .profile{
+        
+        position: absolute; 
+        width:0;
+        height: 0;
+        border-right: 1px solid var(--twitter-background);
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .profile_sidebar{
+        display:block;
+    }
+    .profile_header{
+        display: flex; 
+        position: relative;
+        margin-left: 0px;
+        flex-direction: column;
+        height: 100vh;
+        width: 550px;
+        border-right: 1px solid lightgray;
+        border-left: 1px solid lightgray;
+    }
+    .profile_header_title{
+        position: fixed;
+        display: flex;
+        top: 0;
+        background-color: white;
+        padding-bottom: 13px;
+        z-index: 100;
+        width: 550px;
+        border-bottom: 1px solid lightgray;
+        box-shadow: 1px 1px 2px lightgray;
+    }
+    .profile_bg{
+        display: flex;
+        height: 200px;
+        width: 550px;
+        margin-top: 40px;
+        border-bottom: 1px solid lightgray;
+    
+    }
+    .profile_pic{
+        position: absolute;
+        display: flex;
+        margin-top: 200px;
+        margin-left:20px;
+        border-radius: 50%;
+        overflow: hidden;
+        border:3px solid rgb(255, 255, 255);
+        height: 130px;
+        width: 130px;
+        z-index: 10;
+        padding-left: 0px;
+        box-shadow: white;
+    }
+    .profile_header > button {
+        display: flex;
+        width: 80px;
+        margin-left: 450px;
+        background-color: white;
+        border-radius: 30px;
+        font-weight: bold;
+        border:1px solid var(--twitter-color);
+        color: var(--twitter-color);
+        margin-top: 15px;
+    }
+    .profile_header > button:hover{
+        background-color:#E8F5FE;
+    }
+    
+    .profile_header_text{
+        margin-top: 40px;
+        margin-left: 20px;
+    }
+    
+    .profile_header_text > p {
+        margin-top: 0px;
+        font-size: 14px;
+        color: rgb(155, 153, 153);
+    }
+    
+    .profile_header_info {
+        padding: 20px;
+        padding-bottom: 160px;
+        border-bottom: 1px solid lightgray;
+    }
+    
+    .profile_post{
+        display: flex;
+        flex-direction: column;
+        flex: 0.5;
+        width:548px;
+    }
+    .feed__footer_space{
+        padding-right: -30px;
+        padding: 0;
+    }
+    .post__header{
+        margin-top: 0px;
+        padding:0px;
+    }
+    .profile_footer{
+        position:fixed;
+        z-index: 10;
+        bottom: 0px;
+        display: block;
+        background-color: white;
+        padding:10px;
+        width:550px;
+    }
+    .sidebar_op_mobile_profile_home{
+        margin-left: -10px;
+        margin-right:20px;
+        padding-top: 10px;
+        width:0px;
+    }
+    .sidebar_op_mobile_profile_explore{
+        margin-left: 55px;
+        margin-top: -42px;
+        width:0px;
+    }
+    .sidebar_op_mobile_profile_massage{
+        margin-left: 120px;
+        margin-top: -45px;
+        width:0px;
+    }
+    .sidebar_op_mobile_profile_notification{
+        margin-left: 182px;
+        margin-top: -45px;
+        width:0px;
+    }
+    .sidebar_op_mobile_profile_bookmark{
+        margin-left: 250px;
+        margin-top: -43px;
+        width:0px;
+    }
+    .sidebar_op_mobile_profile_profile{
+        margin-left: 310px;
+        margin-top: -45px;
+        width:0px;
+    }
+    .sidebar_op_mobile_profile_more{
+        margin-left: 370px;
+        margin-top: -45px;
+        width:0px;
+    }
+
+    .sidebar_op_mobile_profile_tweet{
+        margin-left: 450px;
+        margin-top: -40px;
+        padding-top: 5px;
+        margin-bottom:-10px;
+        width:0px;
+    }
+}

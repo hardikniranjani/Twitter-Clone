@@ -1,0 +1,99 @@
+.sidebar_op_mobile_profile{
+    display: none;
+}
+
+.sidebarMobile{
+    /* position:relative; */
+    border-right: 1px solid var(--twitter-background);
+    flex: 0.3;
+    margin-top: 20px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+@media(max-width: 768px){
+    .sidebar_op_mobile_profile{
+        display: flex;
+        flex-direction: row;
+        display: block;
+        z-index: 1;
+        /* align-items: left; */
+        /* left:-200px; */
+        margin-top: -35px;
+        width:100%;
+        /* background-color: rgb(141, 151, 156); */
+        opacity: 0.93;
+        /* display: none; */
+    }
+    .sidebar_open{
+       margin-left:-20px;
+    }
+    .CloseIcon {
+        margin-top: 19px;
+        margin-left:5px;
+    }
+    
+    .sidebar_op_mobile_profile_home{
+        margin-left: -20px;
+        padding-top: 10px;
+        width:0px;
+    }
+    .sidebar_op_mobile_profile_explore{
+        margin-left: 25px;
+        margin-top: -42px;
+        width:0px;
+    }
+    .sidebar_op_mobile_profile_massage{
+        margin-left: 70px;
+        margin-top: -45px;
+        width:0px;
+    }
+    .sidebar_op_mobile_profile_notification{
+        margin-left: 115px;
+        margin-top: -45px;
+        width:0px;
+    }
+    .sidebar_op_mobile_profile_bookmark{
+        margin-left: 155px;
+        margin-top: -43px;
+        width:0px;
+    }
+    .sidebar_op_mobile_profile_profile{
+        margin-left: 200px;
+        margin-top: -45px;
+        width:0px;
+    }
+    .sidebar_op_mobile_profile_more{
+        margin-left: 240px;
+        margin-top: -45px;
+        width:0px;
+    }
+
+    .sidebar_op_mobile_profile_tweet{
+        margin-left: 300px;
+        margin-top: -40px;
+        padding-top: 5px;
+        margin-bottom:-10px;
+        width:0px;
+    }
+
+
+
+    .link_home_click{
+        text-decoration: none;
+    }
+    .link_click{
+        color: black;
+        text-decoration: none;
+    }
+    .sidebarMobile{
+        border-right: none;
+    }
+    .sidebarMobile{
+        padding-left: 0px;
+        margin-right: 170px;
+    }
+
+}  
+
+ 

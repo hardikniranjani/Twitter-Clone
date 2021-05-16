@@ -1,0 +1,160 @@
+.tweetbox{
+    padding-bottom: 10px;
+   
+}
+
+.tweetbox > form {
+    display: flex;
+    flex-direction: column;
+}
+
+.tweetbox_input{
+    display: flex;
+    
+}
+
+.tweetbox_input > input {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex:3;
+    margin-left: 20px;
+    font-size: 20px;
+    border: none;
+}
+
+.tweetbox_footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.tweetbox_footer_button{
+    display: flex;
+    justify-content: space-between;
+}
+
+.form{
+  width: 100vw;
+}
+.tweetbox_input > textarea{
+    /* padding: 2vw;
+    margin: 2vw -2vw;
+    min-height: 15vh; */
+    /* overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none; */
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 50px;
+    padding-left: 10px;
+    font-size: 20px;
+    color: #293241;
+    width: 510px;
+    border:none;
+    /* border-color: rgb(29, 161, 242);
+    border-radius: 2vw; */
+    
+    /*the part below removes the three lines at the bottom right of the textarea*/
+    resize: none;
+    
+  /*the part below removes the blue border that appears everytime you focus in the textarea*/
+    outline: none;
+  }
+  
+  .tweetbox_input >textarea::placeholder{
+    color: darkgray;
+    opacity: 1;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+   
+  .tweetbox_footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .tweetbox_footer > button {
+    background-color: var(--twitter-color) !important;
+    border: none !important;
+    color: white !important;
+    font-weight: 550 !important;
+    text-transform: inherit !important;
+    border-radius: 30px !important;
+    margin-right: 10px;
+    margin-left: 70px;
+    
+  }
+
+.tweetbox_footer > progress {
+  display: flex;
+  padding-top: 20px;
+  margin-top: 20px;
+  width: 100%;
+}
+.tweetbox_footer > div {
+  margin-left: 5px;
+}
+
+  @media(max-width: 768px){
+    .tweetbox{
+      margin-top: 60px;
+    }
+    .form{
+      width: 100vw;
+    }
+    /* .tweetbox_footer{
+      width: 100%
+    } */
+
+    .tweetbox_footer > div {
+      margin-left: -19px;
+    }
+
+    .tweetbox_footer > progress {
+      display: flex;
+      padding-top: 10px;
+      margin-top: 20px;
+      padding-right: 20px;
+      margin-left:-10px;
+    }
+    .tweetbox_input > textarea{
+      /* padding: 2vw;
+      margin: 2vw -2vw;
+      min-height: 15vh; */
+      white-space: pre-wrap;
+      margin-left: 20px;
+      margin-right: 0px;
+      /* margin-right: 20px; */
+      padding-right: 0px;
+      margin-bottom: 20px;
+      padding-bottom: 50px;
+      padding-left: 0px;
+      font-size: 20px;
+      color: #293241;
+      width: 290px;
+      border:none;
+      /* border-color: rgb(29, 161, 242);
+      border-radius: 2vw; */
+      
+      /*the part below removes the three lines at the bottom right of the textarea*/
+      resize: none;
+      
+    /*the part below removes the blue border that appears everytime you focus in the textarea*/
+      outline: none;
+    }
+    .tweetbox_footer > button {
+      background-color: var(--twitter-color) !important;
+      border: none !important;
+      color: white !important;
+      font-weight: 550 !important;
+      text-transform: inherit !important;
+      border-radius: 30px !important;
+      margin-right: auto;
+      margin-left: 9px;
+     
+      
+    }
+  }
+
+ 
